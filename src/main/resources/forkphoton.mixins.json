@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "top.yunmouren.forkphoton.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "ForkPhoton.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "ParticleEngineMixin",
+    "LevelRendererMixin",
+    "no_iris.ParticleEngineMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

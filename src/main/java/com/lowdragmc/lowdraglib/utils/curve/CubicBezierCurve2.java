@@ -1,0 +1,25 @@
+package com.lowdragmc.lowdraglib.utils.curve;
+
+import com.lowdragmc.lowdraglib.utils.Interpolations;
+import net.minecraft.world.phys.Vec2;
+
+/* loaded from: photon-forge-1.19.2-1.0.7.a.jar:META-INF/jars/ldlib-forge-1.19.2-1.0.21.a.jar:com/lowdragmc/lowdraglib/utils/curve/CubicBezierCurve2.class */
+public class CubicBezierCurve2 extends Curve<Vec2> {
+    public Vec2 p0;
+    public Vec2 c0;
+    public Vec2 c1;
+    public Vec2 p1;
+
+    public CubicBezierCurve2(Vec2 start, Vec2 control1, Vec2 control2, Vec2 end) {
+        this.p0 = start;
+        this.c0 = control1;
+        this.c1 = control2;
+        this.p1 = end;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // com.lowdragmc.lowdraglib.utils.curve.Curve
+    public Vec2 getPoint(float t) {
+        return new Vec2((float) Interpolations.CubicBezier(t, this.p0.f_82470_, this.c0.f_82470_, this.c1.f_82470_, this.p1.f_82470_), (float) Interpolations.CubicBezier(t, this.p0.f_82471_, this.c0.f_82471_, this.c1.f_82471_, this.p1.f_82471_));
+    }
+}

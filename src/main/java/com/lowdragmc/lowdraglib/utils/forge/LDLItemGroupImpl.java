@@ -1,0 +1,8 @@
+package com.lowdragmc.lowdraglib.utils.forge;
+
+/* loaded from: photon-forge-1.19.2-1.0.7.a.jar:META-INF/jars/ldlib-forge-1.19.2-1.0.21.a.jar:com/lowdragmc/lowdraglib/utils/forge/LDLItemGroupImpl.class */
+public class LDLItemGroupImpl {
+    public static int expandArrayAndGetId() {
+        return -1;
+    }
+}
